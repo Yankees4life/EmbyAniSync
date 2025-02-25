@@ -2,6 +2,7 @@
 
 This has since gone through a large re-design to have a bit of it's own identity from PlexAniSync. However, a lot of code is still used from the original project, including this readme. Credits to them.
 
+Note: This project is not dead, I just haven't really had any need to work on it, just seems to work.
 
 ## Setup
 
