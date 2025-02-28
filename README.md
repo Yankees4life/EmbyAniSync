@@ -119,11 +119,11 @@ Request Content type should be `application/json`
 
 ### Step 7 - Run as Service
 
-Some options here. These Instructions are user-provided, and docker instructions are on the way.
+Some options here. Some of these instructions are user-provided.
 
-[Linux/SystemD](https://github.com/bpwhelan/EmbyAniSync/wiki/Run-as-a-Linux-Service-%E2%80%90-Systemd)
+[Linux/SystemD](https://github.com/bpwhelan/EmbyAniSync/wiki/Run-as-a-Linux-Service-%E2%80%90-Systemd) Thanks @Amateur-God
 
-[Windows/NSSM](https://github.com/bpwhelan/EmbyAniSync/wiki/Run-as-a-Windows-Service-with-NSSM)
+[Windows/NSSM](https://github.com/bpwhelan/EmbyAniSync/wiki/Run-as-a-Windows-Service-with-NSSM) Thanks @ft-scobra
 
 ## Optional features 
 
@@ -211,3 +211,8 @@ https://github.com/Beannsss/EmbyAniSync/issues
 [Emby](https://emby.media/)
 
 [EmbyPython SDK](https://dev.emby.media/home/sdk/apiclients/Python/README.html)
+
+## Donations
+
+If you've benefited from this or any of my other projects, please consider supporting my work
+via [Github Sponsors](https://github.com/sponsors/bpwhelan) or [Ko-fi.](https://ko-fi.com/beangate)
