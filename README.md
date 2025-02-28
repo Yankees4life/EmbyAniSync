@@ -67,7 +67,7 @@ anilist_token = ANILIST_TOKEN_HERE
 ### Step 4 - Install requirements
 
 
-Install the addtional requirements using the Python package installer (pip) from within the project folder:
+Install the addtional requirements using the Python package installer (pip) from within the project folder: (Note: for Ubuntu 24.04 and maybe other versions, you will need to use venv as ubuntu prevents you from installing pip requirements outside of venv to prevent breaking packages)
 
 `pip install -r requirements.txt`
 
@@ -113,6 +113,7 @@ Basic usage of this feature, more detailed instructions to come.
 #### Configure Webhook
 
 In Emby dashboard, you can create a webhook that points to your flask app:port/update_show, and sends on "Playback Stop" and "Mark Played"
+Request Content type should be `application/json`
 
 ![image](https://user-images.githubusercontent.com/8314499/236054014-eec29591-7b93-4102-ad7c-956b58ee9660.png)
 
