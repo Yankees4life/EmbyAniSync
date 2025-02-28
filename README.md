@@ -116,52 +116,13 @@ In Emby dashboard, you can create a webhook that points to your flask app:port/u
 
 ![image](https://user-images.githubusercontent.com/8314499/236054014-eec29591-7b93-4102-ad7c-956b58ee9660.png)
 
-### Step 7 - Run as a service Systemd
+### Step 7 - Run as Service
 
-Enter the following command into your terminal to create a new service file. 
-replacing nano with your preferred text editor
+Some options here. These Instructions are user-provided, and docker instructions are on the way.
 
-```bash
-sudo nano /etc/systemd/system/embyanisync.service
-```
+[Linux/SystemD](https://github.com/bpwhelan/EmbyAniSync/wiki/Run-as-a-Linux-Service-%E2%80%90-Systemd)
 
-Paste the contents of the following into the new file
-replacing the `/opt/EmbyAniSync/` and `#USER#` with the correct ones for your install
-
-```bash
-[Unit]
-Description=EmbyAniSync
-After=multi-user.target
-[Service]
-Type=idle
-Restart=on-failure
-User=#USER#
-ExecStart=/bin/bash -c 'cd /opt/EmbyAniSync/ && python3 EmbyAniSync.py'
-[Install]
-WantedBy=multi-user.target
-```
-
-Then run the following commands to start the service and enable it at boot
-
-#### Reload the daemon for the latest files
-```bash
-sudo systemctl daemon-reload
-```
-
-#### Start the Service
-```bash
-sudo systemctl start embyanisync
-```
-
-#### Check the service is running
-```bash
-sudo systemctl status embyanisync
-```
-
-#### Enable at boot
-```bash
-sudo systemctl enable embyanisync
-```
+[Windows/NSSM](https://github.com/bpwhelan/EmbyAniSync/wiki/Run-as-a-Windows-Service-with-NSSM)
 
 ## Optional features 
 
