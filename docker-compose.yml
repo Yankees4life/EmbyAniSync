@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  embyanisync:
+    restart: always
+    build: .
+    container_name: embyanisync
+    volumes:
+      - ./EmbyAniSync:/embyanisync
+      - /usr/share/zoneinfo/America/New_York:/etc/localtime
+    ports:
+      - 8081:8081
